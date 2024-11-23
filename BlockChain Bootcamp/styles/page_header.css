@@ -1,0 +1,143 @@
+.header{
+    height: 57px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    background-color: white;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin-bottom: 25px;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    border-color: white;
+    background-color: rgb(0, 0, 0);
+    z-index: 500;
+}
+
+.left-sec{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.menu{
+    padding: 0;
+    margin-top: 0px;
+    margin-right: 0;
+    display: grid;
+    border-style: solid;
+    border-top-width: 3px;
+    border-color: white;
+}
+
+ul{
+    list-style: none;
+    flex-direction: column;
+    margin: 0;
+}
+
+.list{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.list:hover{
+    background-color: gray;
+}
+
+.off-screen-menu{
+    padding-top: 30px;
+    margin-top: 20px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    height: 152px;
+    width: 100%;
+    max-width: 80px; 
+    position: fixed;
+    top: 0;
+    left: -150px;
+}
+
+.off-screen-menu.active{
+    padding-top: 0;
+    margin-top: 57px;
+    left: 0;
+}
+
+nav{
+    padding: 1rem;
+}
+
+.box{
+    padding-top: 5px;
+    padding-bottom: 0px;
+}
+
+.ham-menu{
+    height: 50px;
+    width: 50px;
+    margin-right: auto;
+    position: relative;
+}
+
+.ham-menu span{
+    height: 2px;
+    width: 60%;
+    background-color: white;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: .3s ease;
+}
+
+.ham-menu span:nth-child(1){
+    top: 30%;
+}
+
+.ham-menu span:nth-child(3){
+    top: 70%;
+}
+
+.ham-menu.active span:nth-child(1){
+    top: 50%;
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+
+.ham-menu.active span:nth-child(2){
+    opacity: 0;
+}
+
+.ham-menu.active span:nth-child(3){
+    top: 50%;
+    transform: translate(-50%,-50%) rotate(-45deg);
+}
+
+.middle-sec{
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    height: 57px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.right-sec{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 15px;
+    margin-right: 24px;
+    width: 90px;
+    flex-shrink: 0;
+}
